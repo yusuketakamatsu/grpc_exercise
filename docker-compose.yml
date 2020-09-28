@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    build: .
+    command: bash
+    ports:
+      - 3002:3000
+    volumes:
+      - ./src:/go/src
